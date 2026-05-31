@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Sly Portfolio
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/ea49857c-e68e-4343-82a0-cc1f2b7218ea
+A static Next.js portfolio configured for GitHub Pages.
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+## Deploy To GitHub Pages
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Create a GitHub repository and push this project to its `main` branch.
+2. Open the repository on GitHub.
+3. Go to **Settings > Pages**.
+4. Under **Build and deployment**, choose **GitHub Actions** as the source.
+5. Push a commit or run the **Deploy Next.js site to Pages** workflow manually from the **Actions** tab.
+
+The workflow builds the static site into `out/` and publishes it automatically. Project repositories are served at:
+
+```text
+https://<github-username>.github.io/<repository-name>/
+```
+
+## Verify The Static Export Locally
+
+```bash
+npm run build
+```
