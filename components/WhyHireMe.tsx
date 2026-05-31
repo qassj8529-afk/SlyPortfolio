@@ -45,7 +45,7 @@ export function WhyHireMe() {
                         <div className="bg-gradient-custom p-[2px] rounded-3xl shrink-0">
                             <div className="bg-white p-8 rounded-[22px] h-full flex items-center justify-center text-center">
                                 <p className="text-xl md:text-2xl font-display font-bold text-dark/90 italic leading-snug">
-                                    "I may not have years of experience, but I bring <span className="text-primary">dedication</span>, <span className="text-primary-light">creativity</span>, and <span className="text-accent">consistency</span> to every task."
+                                    &quot;I may not have years of experience, but I bring <span className="text-primary">dedication</span>, <span className="text-primary-light">creativity</span>, and <span className="text-accent">consistency</span> to every task.&quot;
                                 </p>
                             </div>
                         </div>

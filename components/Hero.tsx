@@ -36,7 +36,7 @@ export function Hero() {
         transition={{ duration: 0.7, type: "spring" }}
         className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-dark mb-6"
       >
-        Hi, I'm <span className="text-gradient">Sly</span> 👋
+        Hi, I&apos;m <span className="text-gradient">Sly</span> 👋
       </motion.h1>
 
       <motion.div 
@@ -58,7 +58,7 @@ export function Hero() {
         transition={{ duration: 0.5, delay: 0.3 }}
         className="text-xl md:text-2xl text-dark/60 max-w-2xl mb-12 leading-relaxed font-medium"
       >
-        "I help individuals and businesses stay organized, visible, and efficient online."
+        &quot;I help individuals and businesses stay organized, visible, and efficient online.&quot;
       </motion.p>
 
       <motion.div 
