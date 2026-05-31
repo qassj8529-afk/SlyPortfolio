@@ -1,0 +1,6 @@
+{
+  "name": "Sly's Portfolio",
+  "description": "Social Media Manager & Virtual Assistant Portfolio",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
