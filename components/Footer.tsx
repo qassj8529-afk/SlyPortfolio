@@ -2,7 +2,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
 import Image from 'next/image';
 import { useRef } from 'react';
-import { assetPath } from '@/lib/asset-path';
 
 const socials = [
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jerg-qweensly-b-flores-b70595352', icon: '/linkedin.svg' },
@@ -34,7 +33,7 @@ function DockItem({ item, mouseX }: { item: typeof socials[0], mouseX: any }) {
         <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-dark rotate-45 pointer-events-none"></div>
       </div>
       <a href={item.url} target="_blank" rel="noopener noreferrer" className="w-full h-full relative overflow-hidden flex items-center justify-center rounded-full pointer-events-auto cursor-pointer">
-         <Image src={assetPath(item.icon)} alt={item.name} width={40} height={40} className="w-[70%] h-[70%] object-contain" />
+         <Image src={item.icon} alt={item.name} width={40} height={40} className="w-[70%] h-[70%] object-contain" />
       </a>
     </motion.div>
   );

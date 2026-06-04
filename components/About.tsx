@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'motion/react';
 import { TiltImage } from '@/components/ui/tilt-image';
-import { assetPath } from '@/lib/asset-path';
 
 export function About() {
   return (
@@ -26,7 +25,7 @@ export function About() {
             <div className="relative group w-56 sm:w-64 md:w-80 float-none mx-auto mb-8 md:float-left md:mr-10 md:mb-6 lg:mr-12">
                 <div className="absolute inset-0 bg-gradient-custom rounded-[2.5rem] blur-2xl opacity-40 group-hover:opacity-70 transition-opacity duration-700 pointer-events-none" />
                 <TiltImage 
-                    src={assetPath('/profile-picture.png')} 
+                    src="/profile-picture.png" 
                     alt="Sly Picture" 
                 />
             </div>
@@ -45,7 +44,7 @@ export function About() {
             <div className="clear-both" />
             
             <p className="mb-8 border-l-4 border-accent pl-6 py-2 text-dark italic font-medium">
-              &quot;This portfolio reflects my creativity, communication skills, and willingness to learn. I believe that dedication, adaptability, and passion matter just as much as experience.&quot;
+              "This portfolio reflects my creativity, communication skills, and willingness to learn. I believe that dedication, adaptability, and passion matter just as much as experience."
             </p>
         </motion.div>
       </div>

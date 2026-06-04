@@ -2,7 +2,6 @@
 import { motion } from 'motion/react';
 import { Mail, MessageCircle, Download, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
-import { assetPath } from '@/lib/asset-path';
 
 export function Contact() {
     return (
@@ -14,7 +13,7 @@ export function Contact() {
                    viewport={{ once: true }}
                    className="mb-16"
                 >
-                    <h2 className="text-4xl md:text-6xl font-display font-bold text-dark mb-6">Let&apos;s work <span className="text-accent">together!</span> ✨</h2>
+                    <h2 className="text-4xl md:text-6xl font-display font-bold text-dark mb-6">Let's work <span className="text-accent">together!</span> ✨</h2>
                     <p className="text-lg text-dark/60 font-medium">Replies within 24 hours • Based in Philippines • Available for remote work</p>
                 </motion.div>
 
@@ -27,7 +26,7 @@ export function Contact() {
                         className="flex-1 flex items-center justify-center gap-4 p-6 rounded-2xl bg-secondary/30 border border-secondary hover:border-primary transition-colors group"
                     >
                         <div className="group-hover:scale-110 transition-transform drop-shadow-sm shrink-0">
-                            <Image src={assetPath('/Gmail_icon_(2026).svg')} alt="Gmail" width={48} height={48} />
+                            <Image src="/Gmail_icon_(2026).svg" alt="Gmail" width={48} height={48} />
                         </div>
                         <div className="text-left">
                             <p className="font-bold text-dark text-base sm:text-lg break-all">jergqweenslyb.flores@gmail.com</p>
@@ -45,7 +44,7 @@ export function Contact() {
                         className="flex-1 flex items-center justify-center gap-4 p-6 rounded-2xl bg-primary/5 border border-primary/10 hover:border-primary-light transition-colors group"
                     >
                         <div className="group-hover:scale-110 transition-transform drop-shadow-sm shrink-0 flex items-center justify-center">
-                            <Image src={assetPath('/WhatsApp.svg')} alt="WhatsApp" width={56} height={56} />
+                            <Image src="/WhatsApp.svg" alt="WhatsApp" width={56} height={56} />
                         </div>
                         <div className="text-left">
                             <p className="font-bold text-dark text-base sm:text-lg break-all">+63 928 991 6452</p>

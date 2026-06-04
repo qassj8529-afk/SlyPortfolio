@@ -1,4 +1,4 @@
-import type { NextConfig } from 'next';
+import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -8,9 +8,8 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  // Allow access to remote image placeholder.
   images: {
-    // GitHub Pages cannot run the Next.js image optimization server.
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -26,15 +25,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: 'export',
-  basePath: process.env.PAGES_BASE_PATH,
-  env: {
-    NEXT_PUBLIC_BASE_PATH: process.env.PAGES_BASE_PATH ?? '',
-  },
+  output: 'standalone',
   transpilePackages: ['motion'],
   webpack: (config, {dev}) => {
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
-    // Do not modify - file watching is disabled to prevent flickering during agent edits.
+    // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
     if (dev && process.env.DISABLE_HMR === 'true') {
       config.watchOptions = {
         ignored: /.*/,
